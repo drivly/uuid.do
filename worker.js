@@ -9,6 +9,6 @@ export default {
         uuid: 'https://uuid.do/api' 
       }
     },
-    uuid: Crypto.randomUUID(),
+    uuid: crypto.randomUUID(),
   }, null, 2)) 
 }
