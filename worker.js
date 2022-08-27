@@ -7,7 +7,8 @@ export default {
       url: 'https://uuid.do',
       endpoints: {
         uuid: 'https://uuid.do/api' 
-      }
+      },
+      memberOf: 'https://primitives.do',
     },
     uuid: crypto.randomUUID(),
   }, null, 2)) 
