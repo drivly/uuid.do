@@ -1,0 +1,7 @@
+name = "uuid-do"
+account_id = "b6641681fe423910342b9ffa1364c76d"
+route = { pattern = "*/*", zone_id = "24d34d6ef46b316fb331ac3741727b75" }
+main = "worker.js"
+usage_model = "unbound"
+compatibility_date = "2022-08-27"
+
