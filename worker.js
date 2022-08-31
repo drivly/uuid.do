@@ -1,5 +1,5 @@
 export default {
-  fetch: () => new Response(JSON.stringify({
+  fetch: async (req, env) => new Response(JSON.stringify({
     api: {
       icon: '⚡️',
       name: 'UUID.do',
