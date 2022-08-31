@@ -4,3 +4,7 @@ route = { pattern = "*/*", zone_id = "24d34d6ef46b316fb331ac3741727b75" }
 main = "worker.js"
 usage_model = "unbound"
 compatibility_date = "2022-08-27"
+
+services = [
+  { binding = "CTX", service = "ctx-do", environment = "production" }
+]
