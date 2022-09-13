@@ -11,6 +11,6 @@ export default {
       memberOf: 'https://primitives.do',
     },
     uuid: crypto.randomUUID(),
-    user: await env.CTX.fetch('https://ctx.do', req).then(res => res.json()).then(({user}) => user) 
+    user: await env.CTX.fetch(req).then(res => res.json()).then(({user}) => user) 
   }, null, 2)) 
 }
