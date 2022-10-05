@@ -1,6 +1,6 @@
 export default {
   fetch: async (req, env) => {
-    const path = new URL(req.url).pathname.replace('/')
+    const path = new URL(req.url).pathname.replace('/','')
     let quantity = path == ':quantity' ? 50 : parseInt(path)
     if (quantity == NaN) quantity = 50
     console.log({path,quantity})
