@@ -16,7 +16,7 @@ export default {
         },
         memberOf: 'https://primitives.do',
       },
-      uuid: path == 'api' ? crypto.randomUUID() : Array(quantity).map(i => crypto.randomUUID()),
+      uuid: path == 'api' ? crypto.randomUUID() : Array(quantity).map(() => crypto.randomUUID()),
       user: await env.CTX.fetch(req).then(res => res.json()).then(({user}) => user) 
     }, null, 2))
   }
