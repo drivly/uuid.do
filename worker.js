@@ -6,11 +6,13 @@ export default {
       description: 'Unique ID Generation API',
       url: 'https://uuid.do',
       endpoints: {
-        uuid: 'https://uuid.do/api' 
+        generateUUID: 'https://uuid.do/api',
+        generateManyUUID: 'https://uuid.do/:quantity' 
       },
       memberOf: 'https://primitives.do',
     },
     uuid: crypto.randomUUID(),
+    uuids: Array(parseInt(new URL(req.url).pathname.replace('/')) ?? 10).map(() => crypto.randomUUID()),
     user: await env.CTX.fetch(req).then(res => res.json()).then(({user}) => user) 
   }, null, 2)) 
 }
